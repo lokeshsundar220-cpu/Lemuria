@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROUTINEFLOW Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ROUTINEFLOW Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#progress">Progress</a></li>
+                <li><a href="#streaks">Streaks</a></li>
+                <li><a href="#routines">Routines</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="progress">
+            <h2>Progress Bar</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%;"></div>
+            </div>
+        </section>
+        <section id="streaks">
+            <h2>Streaks</h2>
+            <div class="streak">
+                <p>Your current streak: <strong>5 days</strong></p>
+            </div>
+        </section>
+        <section id="routines">
+            <h2>Your Routines</h2>
+            <div class="routine-block">
+                <h3>Morning Routine</h3>
+                <p>Duration: 30 minutes</p>
+            </div>
+            <div class="routine-block">
+                <h3>Evening Routine</h3>
+                <p>Duration: 45 minutes</p>
+            </div>
+        </section>
+    </main>
+    <button id="timer-button">Start Timer</button>
+    <div id="timer-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Timer</h2>
+            <p>Timer is running...</p>
+        </div>
+    </div>
+    <div id="toast" class="toast">
+        <p>Toast Notification: Action completed successfully!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
